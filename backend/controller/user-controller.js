@@ -42,7 +42,7 @@ try {
  return res.status(201).json({ user });
 };
 
-export async function logIn(req, res, next) {
+export async function logIn(req, res) {
     const {email,password} = req.body;
     
     let existingUser;
